@@ -1,0 +1,84 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li.logo {
+    margin-right: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: blue;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%; /* Make images take full width of their container */
+    max-width: 300px; /* Limit maximum width for better responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+    border: 5px solid white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li.logo {
+        margin-right: 0;
+    }
+}

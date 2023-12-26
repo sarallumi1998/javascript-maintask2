@@ -1,0 +1,93 @@
+body{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#form{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
+
+h1{
+    text-align: center;
+    color:black;
+    font-weight: bold;
+}
+
+#form button{
+    background-color:blue;
+    color:white;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+}
+#form button:hover{
+    background-color: green;
+    border: 2px solid green;
+
+}
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
+}
+
+.input-group input:focus{
+    outline:0;
+    
+}
+
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
+}
+.custom-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: green;
+    border: 2px solid green;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 200px; 
+    text-align: center;
+}
+
+.close-btn {
+    color: #000;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
